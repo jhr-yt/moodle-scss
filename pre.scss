@@ -1,0 +1,74 @@
+$magenta: #c7348b;
+/**
+ * Color Function variables
+ * Overwrite bootstrap variables
+ */
+$brand-primary: #4580b9 !default;
+$brand-info: adjust-color(
+  $brand-primary,
+  $saturation: -15%,
+  $lightness: 25%
+) !default;
+$brand-success: adjust-color(
+  $brand-primary,
+  $hue: -115deg,
+  $lightness: -10%
+) !default;
+$brand-warning: adjust-color(complement($brand-primary), $red: 50) !default;
+$brand-danger: adjust-color(
+  $brand-warning,
+  $saturation: 50%,
+  $lightness: -15%
+) !default;
+// End Color function variables
+
+// Colors
+$gray-dark: #373a3c !default;
+$gray: #55595c !default;
+$gray-light: #818a91 !default;
+$gray-lighter: #eceeef !default;
+$gray-lightest: #f7f7f9 !default;
+
+$brand-inverse: $gray-dark !default;
+$navbar-height: 50px !default;
+
+// Spacing
+$spacer: 1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+$border-width: 1px !default;
+
+// Body
+//$body-bg:    #f4f4f4 !default;
+$body-bg: #ffffff !default;
+$body-color: #243d51 !default;
+
+// Typography
+$font-family-sans-serif: "Inter", Arial, sans-serif !default;
+$font-size-root: 14px !default;
+
+// Tables
+$table-bg: transparent !default;
+$table-bg-accent: #fafafa !default;
+$table-bg-hover: lighten($brand-primary, 55%) !default;
+$table-bg-active: $table-bg-hover !default;
+$table-border-color: #f4f4f4 !default;
+
+// Dropdowns
+$dropdown-border-color: #e2e2e2 !default;
+$dropdown-link-color: rgba(0, 0, 0, 0.535) !default;
+
+// Navbar
+$navbar-light-color: rgba(0, 0, 0, 0.535) !default;
+$navbar-light-hover-color: $brand-primary !default;
+$navbar-light-active-color: $brand-primary !default;
+
+// Cards
+$card-border-radius: 0 !default;
+$card-border-color: rgba(238, 238, 238, 1) !default;
+
+// Breadcrumbs
+$breadcrumb-bg: transparent !default;
+$breadcrumb-padding-x: 0 !default;
+$breadcrumb-divider: "/" !default;
+$breadcrumb-divider-rtl: "/" !default;
